@@ -20,7 +20,7 @@
     ?>
     <h1>3 lesson 28.09</h1>
     <?php 
-    
+    echo "hhe;";
     
     ?>
 </body>
