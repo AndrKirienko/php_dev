@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  mariadb-container:
+    image: mariadb:laters
+    enviroment: 
+      - MARIADB_USER=example-user
+    port:
+      - 3306:3306
+    volumes:
+          # <path>
+            
+      
