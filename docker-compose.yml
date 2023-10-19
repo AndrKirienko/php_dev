@@ -10,4 +10,11 @@ services:
     volumes:
           # <path>
             
-      
+services:
+  php:
+    buidl:
+      context:
+      dockerfile: dockerfile
+    command: php -s 0.0.0.80
+    volumos:
+      - ""
