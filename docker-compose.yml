@@ -1,20 +1,30 @@
-version: "3.8"
+version: '3'
+servicess:
+    web:
+      image: php:8.2-apache
+      volumes: 
+        - /var/www/practice/php/php-calculator-app:/var/www/html
+      ports:
+        - "8080:80"
 
-services:
-  mariadb-container:
-    image: mariadb:laters
-    enviroment: 
-      - MARIADB_USER=example-user
-    port:
-      - 3306:3306
-    volumes:
-          # <path>
+
+# version: "3.8"
+
+# services:
+#   mariadb-container:
+#     image: mariadb:laters
+#     enviroment: 
+#       - MARIADB_USER=example-user
+#     port:
+#       - 3306:3306
+#     volumes:
+#           # <path>
             
-services:
-  php:
-    buidl:
-      context:
-      dockerfile: dockerfile
-    command: php -s 0.0.0.80
-    volumos:
-      - ""
+# services:
+#   php:
+#     buidl:
+#       context:
+#       dockerfile: dockerfile
+#     command: php -s 0.0.0.80
+#     volumos:
+#       - ""

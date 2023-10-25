@@ -43,7 +43,4 @@ class Calculator
 
 }
 
-
-//sum, division, difference, multiplication
-
 ?>
