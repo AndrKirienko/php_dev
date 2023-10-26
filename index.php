@@ -25,6 +25,7 @@
     require('ChildClass.php');
 
     $p = new ParentClass;
+    $fdss = new 
     var_dump($p->public);
    // var_dump($p->protected);
     //var_dump($p->private);
