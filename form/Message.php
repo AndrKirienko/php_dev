@@ -15,6 +15,15 @@ class Message extends NotificationService
 
         return 'ok';
     }
+    use UtilityNew;
+    use Utility{
+        Utility::getSubTitle as private;
+    }
+    use Utility{
+        Utility::setSubTitle insteadof UtilityNew;
+        UtilityNew::getSubTitle as getSubTitleFromNew;
+
+    }
 }
 
 ?>

@@ -4,7 +4,8 @@
 //ini_set('strict_types','0');
 
 class Cart
-{
+{   
+    public static $i=1;
     public array $products;
     
     public function addProduct($product) : static 
@@ -20,7 +21,16 @@ class Cart
         foreach($this->products as $product){
             $total += $product['price'];
         }
-
+        echo Cart::getHeader();
+        var_dump(self::$i);
         return $total;
+
+    }
+    public static function getHeader() //не можемо використовувати this
+    //виклику методів класу без створення об'єкта цього класу
+    //розширюється на всі методи класу
+    //
+    {
+        return 'Header from method';
     }
 }
