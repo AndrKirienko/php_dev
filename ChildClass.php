@@ -1,6 +1,7 @@
-<?php
+ <?php
 
-class ChildClass extends ParentClass
-{
-    
-}
+    use parent\ParentClass as O;
+
+    class ChildClass extends O
+    {
+    }

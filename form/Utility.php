@@ -17,5 +17,3 @@ trait Utility
         return $this->subTitle;
     }
 }
-
-?>
