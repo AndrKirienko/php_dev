@@ -10,7 +10,7 @@ final class MyPDO //final (фінальний результат) - не мож�
         ':host=' . $settings['database']['host'] .
         ((!empty($settings['database']['port'])) ? (';port=' . $settings['database']['port']) : '') .
         ';dbname=' . $settings['database']['schema'];
-        
+
        self::$connection = new class{};// \PDO($dns, $settings['database']['username'], $settings['database']['password']);
        //анонимний клас щоб трансформувати якісь структури в об'єктний вид
        //self - обращение статичному об'єкту
